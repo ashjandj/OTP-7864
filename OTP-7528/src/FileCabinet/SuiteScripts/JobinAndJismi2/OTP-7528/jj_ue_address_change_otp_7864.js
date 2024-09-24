@@ -16,8 +16,7 @@
  * Script Description: This script checks for changes or additions in the addressbook sublist 
  * of the Customer Record and sets a custom checkbox field to true if any modifications are detected.
  * 
- * Revision History: Nil
-*/
+ * Revision History: 1.0*/
 define(['N/record'],
     /**
  * @param{record} record
@@ -127,6 +126,6 @@ define(['N/record'],
             }
         }
 
-        return { beforeLoad, beforeSubmit, afterSubmit }
+        return {  beforeSubmit }
 
     });
